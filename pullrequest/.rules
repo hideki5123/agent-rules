@@ -1,0 +1,44 @@
+## gh-pr-summary rule
+
+## summary
+
+This rule allows you to automatically retrieve the contents and diffs of the pull request associated with the branch you are currently checking out, and to perform a sequence of summarizing what changes have been made, with a single prompt.
+
+---
+
+## Usage
+
+1. check out the target branch with `git checkout`. 2.
+2. type the following prompt to automatically output the contents, diff, and summary of the PR.
+
+
+Check out the content and diffs of the pull requests being made on this branch and summarize what changes have been made.
+Also, please suggest any areas that you think should be reviewed in more detail.
+
+
+--- ## Execution Flow (Automated)
+
+## Execution flow (automated process)
+
+1. get current branch name with `git branch --show-current` 2.
+2. get PR title, description, reviewer, status, etc. with `PAGER=cat gh pr view` 3.
+3. use `PAGER=cat gh pr diff` to get the diff of the PR
+4. summarize the PR's purpose, main changes, scope of impact, etc. in Japanese based on the retrieved information.
+
+---
+
+## Notes.
+- The `gh` CLI must be installed.
+- GitHub authentication must have been completed.
+- If the `PAGER` environment variable causes an error, use `PAGER=cat` temporarily.
+
+---
+
+## Example.
+
+Check the content and diffs of the pull requests being made on this branch and summarize what changes have been made.
+
+
+--- ## Example.
+
+This rule can be used to streamline and automate PR review. 

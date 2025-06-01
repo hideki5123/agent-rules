@@ -1,0 +1,24 @@
+// https://zenn.dev/erukiti/articles/2503-cline-express#%E6%97%97%E8%89%B2%E3%81%8C%E5%A4%89%E3%82%8F%E3%81%A3%E3%81%9F%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88
+
+This project was created by AI. There are currently no users of this project.
+
+Note that the goal of this project is to create a core of AI agents that completely abolishes dependencies. The intended use is as a semi-automatic coding agent for program design, implementation, testing, etc. The core will be used from a CLI/VSCode extension/web app, etc.
+
+We would like you to reduce technical debt by removing inconsistencies, duplications, etc. from the code. However, looking at past failures, I am concerned that if you try to do it all at once or proceed in a half-hearted manner, you will fail in the same way and will only cause more inconsistency and disorganization. So, I would like you to think of ways to prevent that from happening.
+
+** There is only one developer and no API users yet. No need for a transition period or maintaining compatibility **
+**Don't leave compatibility. Turn it all off** **
+**Remove all deprecated code.
+**Do not create intermediate states to the new mechanism** **Do not use any.
+**Do not use any. Strive for type safety.
+* Use functions instead of classes as much as possible. Unit test the function.
+* Remove unnecessary comments. Fix conflicting comments.
+* Keep it simple, performance is secondary.
+
+If the plan is too large, it will fail. I want a solution with a realistic granularity. Also, AI will continue to design and implement the system. Hence, think in terms of means possible for AI. Don't think that your proposal will solve the whole problem by itself. It can retry many times.
+
+The technical debt elimination will not end with this one time. Think about what you need to do as the first step.
+
+**Think of only one thing that will fundamentally solve the technical debt. Don't think about anything else. Eliminate it. Don't make suggestions. Do only one thing**.
+
+Translated with www.DeepL.com/Translator (free version)
